@@ -1,0 +1,140 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8rem;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .logo p {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .logo span {
+    color: orangered;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links li {
+    margin-right: 15px;
+
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    color: orangered;
+}
+
+.navbar .nav-links li:active {
+    transform: scale(0.97);
+}
+
+.btn-learn {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+.btn-learn:hover {
+    border: 2px solid orangered;
+}
+
+.responsive-icons {
+    display: none;
+}
+
+/* responsive:  */
+
+@media screen and (max-width: 600px) {
+
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .responsive-icons {
+        display: block;
+    }
+
+    .navbar #show-links,
+    .navbar #hide-links {
+        display: block;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: #0a1930;
+        width: 100%;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    .navbar #show-links li,
+    .navbar #hide-links li {
+        padding: 15px 0;
+        /* margin: 0 15px; */
+        text-align: center;
+        border-bottom: 1px solid #fff;
+    }
+
+    .navbar #show-links li:last-child {
+        border-bottom: none;
+    }
+
+    .navbar #show-links li a {
+        font-size: 17px;
+    }
+
+    .navbar #show-links li a:hover {
+        color: orangered;
+    }
+
+    .navbar #show-links {
+        animation: slide-in 1.2s ease-in-out forwards;
+    }
+
+    .navbar #hide-links {
+        left: -100%;
+        transition: left 1.2s ease-in-out;
+    }
+
+    @keyframes slide-in {
+        0% {
+            transform: translateX(-100%)
+        }
+
+        100% {
+            transform: translateX(0%)
+        }
+    }
+
+    /* @keyframes slide-out {
+        0% {
+            transform: translateX(0%)
+        }
+
+        100% {
+            transform: translateX(-100%)
+        }
+    } */
+
+
+}

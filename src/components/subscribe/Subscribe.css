@@ -1,0 +1,101 @@
+#subscribe{
+    background: rgba(0,0,0, 0.7) url('https://img.freepik.com/free-photo/three-young-women-using-mobile-phone-street_1301-3363.jpg?size=626&ext=jpg&ga=GA1.2.1649210967.1660762143&semt=ais');
+    /* filter: brightness(90%); */
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+}
+
+.subscribe h2{
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+    color: #fff;
+
+}
+
+form button{
+    background: var(--form-button);
+    color: #fff;
+    padding: 1rem;
+    border: 1px solid var(--form-button);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+form button:hover{
+    color: orangered;
+    transition: 0.3s ease;
+}
+
+form button:active{
+   transform: scale(0.97);
+
+}
+
+form input{
+    padding: 1rem;
+    width: 25rem;
+    background: transparent;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px 0 0 5px;
+    color: #fff;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.socials .social-icon{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.socials .social-icon svg{
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.socials .social-icon svg:hover{
+    color: orangered;
+    transition: 0.3s ease;
+}
+
+.socials .social-icon:active{
+   transform: scale(0.90);
+}
+
+@media screen and (max-width: 372px) {
+    form input{
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    form button{
+        border-radius: 5px ;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 338px){
+    .socials{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .socials .social-icon{
+        width: 18%;
+        margin: 0;
+    }
+}

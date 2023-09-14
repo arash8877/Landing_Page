@@ -1,0 +1,170 @@
+#header {
+    position: relative;
+}
+
+.header {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+
+.header h1{
+    font-size: 3rem;
+    line-height: 1.4;
+    color: var(--color-white);
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.header h1 span {
+    display: block;
+}
+
+.header h1 span:nth-child(1) {
+    font-weight: 900;
+}
+
+.header h1 span:nth-child(2) {
+    font-weight: 500;
+}
+
+.header h1 span:nth-child(3) {
+    font-weight: 100;
+}
+
+.header h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 65%;
+    background: var(--color-white);
+    height: 1px;
+}
+
+.header-right p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 3rem 0;
+    color: var(--color-white);
+    width: 70%;
+    text-align: justify;
+}
+
+
+.btn-start,
+.btn-how {
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s ease;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin-right: 20px;
+}
+
+
+.btn-start {
+    background: orangered;
+    padding: 5px 16px;
+}
+
+
+
+.btn-how:hover {
+    color: orangered;
+}
+
+.btn-start:hover {
+    border: 2px solid orangered;
+}
+
+.header-left{
+    width: 50%;
+    padding: 2em
+}
+
+
+.header-right{
+    width: 50%;
+    padding-left: 10em;
+    padding-top: 20px;
+}
+
+
+.header-left img {
+    width: 100%;
+}
+
+.floating-icon{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: var(--light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.mouse{
+    transform: translateY(-25%);
+    animation: bounce 0.8s ease infinite alternate;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(-25%);
+    }
+    100%{
+        transform: translateY(25%);
+    }
+}
+
+/* responsive */
+
+@media screen and (max-width: 834px){
+    .header h1{
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 772px){
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-left,
+    .header-right{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .header-left{
+        margin-bottom: 20px;
+    }
+
+    #header{
+        padding-top: 50px;
+    }
+
+    .header h1::after {
+        left: 20%;
+    }
+
+    .header-right p {
+        margin: 2rem 0;
+    }
+
+}

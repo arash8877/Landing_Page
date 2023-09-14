@@ -1,0 +1,82 @@
+#download{
+    background: linear-gradient(
+        90deg,
+        rgba(45, 165, 255, 1) 45%,
+        rgba(1, 223, 245, 1) 100%
+    );
+    text-align: center;
+    color: #fff;
+}
+
+.download-title{
+    padding-bottom: 3rem;
+}
+
+.download-title h2{
+    font-size: 3rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+}
+
+.download-title h2::before{
+    content: '';
+    width: 10rem;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.download-title p{
+    font-size: 1.2rem;
+}
+
+.download-apps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-apps .download-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    width: 12rem;
+    border: 2px solid #fff;
+    border-radius: 0.5rem;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.download-apps .download-app:active{
+    transform: scale(0.97);
+}
+
+.download-apps .download-app:hover{
+    color: orangered;
+    transition: 0.3s ease;
+}
+
+.download-apps .download-app p{
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 400px){
+    .download-title h2{
+        font-size: 2rem;
+    }
+
+    .download-apps{
+        flex-wrap: wrap;
+    }
+
+    .download-apps .download-app{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+}
