@@ -1,5 +1,5 @@
 import './App.css';
-import { Navbar, Header, Features, Download, Subscribe } from './components/index'
+import { Navbar, Header, Features, Download, Subscribe, Faq } from './components/index'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Features/>
       <Download/>
       <Subscribe/>
-      {/* <Faq/> */}
+      <Faq/>
       {/* <Footer/> */}
     </main>
   );
