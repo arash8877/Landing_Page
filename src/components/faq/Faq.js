@@ -33,6 +33,7 @@ const Faq = () => {
           {questions &&
             questions.map((item) => (
               <Question
+               key={item.id}
                title={item.title}
                answer={item.answer}
                id={item.id}/>
