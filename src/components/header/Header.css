@@ -113,7 +113,7 @@
 
 .mouse{
     transform: translateY(-25%);
-    animation: bounce 0.8s ease infinite alternate;
+    animation: bounce 1s ease infinite alternate;
 }
 
 @keyframes bounce{
